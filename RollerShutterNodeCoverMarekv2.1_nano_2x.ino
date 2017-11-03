@@ -132,6 +132,11 @@ void sendState() {
   send(msgDown_1.set(coverState == DOWN));
   send(msgStop_1.set(coverState == STOP));
   send(msgPercentage_1.set(currentShutterLevel));
+  
+  send(msgUp_2.set(coverState == UP));
+  send(msgDown_2.set(coverState == DOWN));
+  send(msgStop_2.set(coverState == STOP));
+  send(msgPercentage_2.set(currentShutterLevel));
 }
 
 void shuttersUp(void) {
